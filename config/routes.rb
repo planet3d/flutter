@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   
   devise_for :users
   root 'pages#index'
+  resources :posts
   
   get '/index' => 'pages#index'
   get '/home' => 'pages#home'
